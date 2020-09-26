@@ -2,7 +2,7 @@
 Brunch Updater is a handy bash script intended to make updating the Brunch Framework easier for users unfamiliar or uncomfortable with writing out terminal commands. It is intended to be ran as a single command that then guides users into making selections tailored to their own files and system. It is a bit slower than writing out the installation command, this is by design to help new users feel comfortable with updating their system.
 All Brunch installation and documentation is maintained at https://github.com/sebanc/brunch
 
-# Currently implimented:
+# Currently implemented:
 
 Script checks for Brunch update files with their default names on the PC in ~/Downloads
 - If no files are present, it will prompt the user to download a Brunch release, this can either be the most recent release downloaded automatically in the script, or the user can be linked to the release page to pick a different release if they want to.
