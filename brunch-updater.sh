@@ -17,7 +17,11 @@ EOF
 
     main() {
         while true; do
-        RELEASE=$(cat /etc/brunch_version)
+        RELEASE=$(cat /etc/brunch_version 2>/dev/null)
+        if [ -z "$RELEASE" ]; then
+            echo "[ERROR] Invalid system!"
+            break
+        fi
         CURRENT=$(awk '{print $4}' < /etc/brunch_version)
         PS3=" >> "
         BOOKMARK=$(pwd)
